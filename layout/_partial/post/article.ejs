@@ -21,7 +21,7 @@
         </div>
         <%- partial('gitalk', {post: page}) %>
     </div>
-    <% if (theme.TOC == true){ %>
+    <% if (theme.TOC == true || page.TOC == true){ %>
         <div class='side'>
             <%- toc(page.content, {list_number: true}) %>
         </div>
